@@ -1,4 +1,4 @@
-from flask import Flask,render_template, Response, request, make_response,jsonify
+from flask import Flask,render_template, Response, request
 from VideoCapture import VideoCapture
 app = Flask(__name__)
 import cv2

@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 from mtcnn.mtcnn import MTCNN
 from tensorflow.keras.models import load_model
-from keras.preprocessing import image
+from tensorflow.keras.preprocessing import image
 import matplotlib.pyplot as plt
 class VideoCapture(object):
     def __init__(self):
