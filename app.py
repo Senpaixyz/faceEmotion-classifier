@@ -1,12 +1,15 @@
 from flask import Flask,render_template, Response, request
+from flask_ngrok import run_with_ngrok
 from VideoCapture import VideoCapture
-app = Flask(__name__)
 import cv2
 import os
 from PIL import Image
 import base64
 import io
 import matplotlib.pyplot as plt
+app = Flask(__name__)
+#run_with_ngrok(app)
+
 
 app.config['MAX_CONTENT_LENGTH'] = 3024 * 3024
 app.config['UPLOAD_EXTENSIONS'] = ['.jpg', '.png']
@@ -227,6 +230,6 @@ def request_entity_too_large(error):
                            is_error_msg=msg
                            )
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port='5000')
+    app.run()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
