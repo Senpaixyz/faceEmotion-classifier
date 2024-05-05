@@ -1,9 +1,9 @@
 # FaceEmotion Classifier 
-## _CNN based model deployed in Flask_
+
+The face emotion classifier web application developed in this study can accurately predict seven distinct types of emotions. The model was built using convolutional neural networks (CNN) with layers configured to accept input of size (48, 48, 1), denoting grayscale images with dimensions of 48x48 pixels. Training the model took 50 epochs, a measure of how many times the entire training dataset was passed forward and backward through the neural network. During testing, the model achieved an accuracy rate of 85%, indicating its effectiveness in accurately classifying emotions based on input images. The application itself is deployed using Flask as the backend server and is hosted on Heroku, providing users with a reliable and accessible platform for emotion recognition tasks.
 
 [![N|Solid](https://github.com/Senpaixyz/faceEmotion-classifier/blob/master/images/landing%20page.PNG?raw=true)](https://github.com/Senpaixyz/faceEmotion-classifier/blob/master/images/landing%20page.PNG)
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/Senpaixyz/faceEmotion-classifierr)
 ## Features
 
 - The predictor model can predict multiple faces in a single frame.
